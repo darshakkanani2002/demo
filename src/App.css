@@ -1,0 +1,276 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  background-color: #0698d6;
+
+ 
+  width: 0%;
+  height: 4px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+  
+}
+.navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: rgba(30, 30, 30, 0.65);
+  --bs-nav-link-hover-color: #0698d6 !important;
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 16.25rem !important;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.home-first-slide-text{
+  background-color: #0698d6;
+  color: #fff !important;
+  display: inline-block;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 8px;
+}
+.home-slider-image{
+  filter: brightness(60%);
+}
+.home-back-img-1{
+  background-image: url('F:/Atom/pharma/public/assets/image/PHARMACEUTICAL-API-.png');
+  height: 250px;
+  background-size: cover;
+  padding: 0;
+  
+}
+
+.home-back-img-2{
+  background-image: url('F:/Atom/pharma/public/assets/image/PHARMACEUTICAL-API2.png');
+  height: 250px;
+  background-size: cover;
+  padding: 0;
+}
+
+.home-back-img-3{
+  background-image: url('F:/Atom/pharma/public/assets/image/pharmaceutical-tablets-122415.jpg');
+  height: 250px;
+  background-size: cover;
+  padding: 0;
+}
+.home-back-img{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 250px;
+  padding: 20px;
+}
+.home-box-div{
+  border:3px solid #000;
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+.home-box-div::before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  background-color: #0698d6;
+  right: 20px;
+  top: 4px;
+}
+
+.home-box-div::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  background-color: #0698d6;
+  left: 20px;
+  top: 4px;
+}
+.home-why-choose-section{
+  border: 1px solid #d8d8d8;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 5px #bbbbbb;
+  height: 370px;
+  background-color: #fff;
+}
+
+.home-certi-section{
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 5px #bbbbbb;
+
+}
+.footer-product-div{
+  position: relative;
+}
+.footer-product-div::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 2px;
+  background-color: #cacaca;
+}
+
+.footer-latest-pro{
+  position: relative;
+}
+.footer-latest-pro::before{
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  height: 2px;
+  width: 20px;
+  background-color: #cacaca;
+}
+
+.footer-product-div-2{
+  position: relative;
+}
+.footer-product-div-2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 2px;
+  background-color: #cacaca;
+}
+.footer-popular-product-div{
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 5px #bbbbbb;
+  border-radius: 8px;
+}
+.fa-circle-dot{
+  color: #0698d6;
+  margin-right: 5px;
+}
+.footer-last-section-div{
+  border:1px solid #0698d6;
+}
+
+.about-text-div{
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 2rem 0px;
+}
+.about-under-line{
+  border: 3px solid #000;
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+.about-under-line::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 150px;
+  background-color: #0698d6;
+  left: 16px;
+  top: 2.5px;
+}
+.about-line-height{
+  line-height: 28px;
+}
+.about-back-img{
+  background-image: url('F:/Atom/pharma/public/assets/image/about-back-img2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 480px;
+}
+
+.about-back-div{
+  width: 100%;
+  height: 480px;
+  background-color: #00000091;
+}
+@media (max-width:574px) {
+  .about-back-img{
+    height: 800px;
+  }
+  .about-back-div{
+    height: 800px;
+  }
+}
+
+.about-counter-text{
+  font-size: 50px;
+  font-weight: 800;
+  color: #22a7cc;
+}
+.about-image2{
+  filter: brightness(55%);
+}
+.about-our-mission-icon{
+  padding: 10px 8px 8px 14px;
+  border-radius: 50%;
+  background-color: #0698d6;
+  color: #fff;
+  height: 36px;
+  width: 36px;
+}
+
+.contact-icons{
+  font-size: 85px;
+  color: #22a7cc;
+}
+.contact-information-div{
+  box-shadow: 0px 0px 10px 5px #bbbbbb;
+  border-radius: 8px;
+}
+.inquiry-first-back-img{
+  background-image: url('../public/assets/image/inquiry-first-back-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.inquiry-first-back-div{
+  width: 100%;
+  height: 400px;
+  background-color: #0000008a;
+}
+.inquiry-first-back-text{
+  color: #00b3ff;
+}
