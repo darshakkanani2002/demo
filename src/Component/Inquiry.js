@@ -58,7 +58,7 @@ export default class Inquiry extends Component {
                             </div>
 
                             <div className='col-lg-6'>
-
+                                <img src='./assets/image/inquiry-page-img.jpg' alt="" className='img-fluid inguiry-img'/>
                             </div>
                         </div>
                     </div>
