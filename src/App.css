@@ -49,7 +49,22 @@
   margin-bottom: 0;
   list-style: none;
 }
-
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0698d6 !important;
+  --bs-btn-border-color: #0698d6 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0698d6 !important;
+  --bs-btn-hover-border-color: #0698d6 !important;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0698d6 !important;
+  --bs-btn-active-border-color: #0698d6 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -72,7 +87,7 @@
   filter: brightness(60%);
 }
 .home-back-img-1{
-  background-image: url('F:/Atom/pharma/public/assets/image/PHARMACEUTICAL-API-.png');
+  background-image: url('../public/assets/image/PHARMACEUTICAL-API-.png');
   height: 250px;
   background-size: cover;
   padding: 0;
@@ -80,14 +95,14 @@
 }
 
 .home-back-img-2{
-  background-image: url('F:/Atom/pharma/public/assets/image/PHARMACEUTICAL-API2.png');
+  background-image: url('../public/assets/image/PHARMACEUTICAL-API2.png');
   height: 250px;
   background-size: cover;
   padding: 0;
 }
 
 .home-back-img-3{
-  background-image: url('F:/Atom/pharma/public/assets/image/pharmaceutical-tablets-122415.jpg');
+  background-image: url('../public/assets/image/pharmaceutical-tablets-122415.jpg');
   height: 250px;
   background-size: cover;
   padding: 0;
@@ -215,7 +230,7 @@
   line-height: 28px;
 }
 .about-back-img{
-  background-image: url('F:/Atom/pharma/public/assets/image/about-back-img2.jpg');
+  background-image: url('../public/assets/image/about-back-img2.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 480px;
@@ -273,4 +288,12 @@
 }
 .inquiry-first-back-text{
   color: #00b3ff;
+}
+.inquiry-form-div{
+  margin-top: -35px;
+  border: 1px solid #00b3ff;
+  border-radius: 8px;
+}
+.inguiry-img{
+  filter: brightness(40%);
 }
