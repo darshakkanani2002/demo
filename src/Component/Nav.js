@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class Nav extends Component {
     render() {
@@ -27,7 +27,7 @@ export default class Nav extends Component {
                                         <li><Link className="dropdown-item nav-menu-li" to="#">API</Link></li>
                                         <li><hr className="dropdown-divider" /></li>
                                         <li><Link className="dropdown-item" to="#">INTERMEDIATES</Link></li>
-                            
+
                                     </ul>
                                 </li>
                                 <li className="nav-item m-3 fw-bolder">
@@ -40,7 +40,28 @@ export default class Nav extends Component {
                             </ul>
                             <form className="d-flex" role="search">
                                 <Link to="inquiry"><button className='btn btn-primary fw-bolder m-2'><i class="fa-solid fa-phone"></i> INQUIRY</button></Link>
-                                    <button className="btn btn-outline-dark m-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button className="btn btn-outline-dark m-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                {/* <!-- Modal --> */}
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Search Product Here</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search Product Name" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
