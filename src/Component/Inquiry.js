@@ -34,7 +34,7 @@ export default class Inquiry extends Component {
                 <div>
                     <div className='container p-5 inquiry-form-div'>
                         <div className='row'>
-                            <div className='col-lg-6 border'>
+                            <div className='col-lg-6 inquiry-form-div2'>
                                 <h5 className='text-muted pt-4 '>FREE CONSULTATION</h5>
                                 <h2>GET A FREE QUOTE</h2>
 
@@ -50,7 +50,7 @@ export default class Inquiry extends Component {
                                         <input type='text' className='form-control'></input>
 
                                         <label className='form-lable mt-3'>Message*</label>
-                                        <textarea className='form-control'></textarea>
+                                        <textarea type="text" className='form-control'style={{height:"200px"}}></textarea>
                                       
                                         <ButtonStyle type='button' className='mt-4'>Send</ButtonStyle>
                                     </form>
